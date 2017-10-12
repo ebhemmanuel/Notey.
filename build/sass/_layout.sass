@@ -3,42 +3,39 @@
 /* ---------------------------------------- */
 
 nav
-	height: 80px
+	height: $nav-height
 	color: $nav-text-color
 	background: $nav-bg-color
 	a
 		transition: color 0.35s
-		color:
-		&:hover
+		color: $nav-text-color
+		&:hover,&:focus
 			color: $nav-text-color
 
+.content-container
+	padding-top: 70px
+
 .logo-container
-	line-height: 80px
+	line-height: $logo-line-height;
+	ul
+		line-height: $logo-line-height;
 
 .logo img
-	width: 80px
+	width: $logo-img-width
 
 /* ---------------------------------------- */
 // Intro Page
 /* ---------------------------------------- */
 
 .welcome-message
-	padding-top: 60px
+	padding-top: $welcome-message-p-t
 	display: none
 	opacity: 0
 
+.welcome-title
+	color: $welcome-title
 .user-name
 	padding-left: 6px
-
-.welcome-button
-	border: none
-	padding: 14px
-	background: #F99090
-	color: #fafafa
-	border-radius: 6px
-	letter-spacing: 1px
-	display: none
-	opacity: 0
 
 .intro-message-one,
 .intro-message-two,
@@ -46,14 +43,16 @@ nav
 	opacity: 0
 
 .intro-message-two
-	font-size: 30px
+	font-size: $welcome-message-2
+	color: $welcome-message-2-text-color
+	font-weight: $welcome-message-2-weght
+
 
 .intro-message-one
-	font-size: 56px
+	font-size: $intro-message-font-size
 
 .intro-container
 	height: auto !important
-	//padding-top:120px;
 
 /* ---------------------------------------- */
 // List Page
@@ -64,6 +63,6 @@ nav
 	opacity: 0
 
 ul.item-list li
-	border-radius: 0px
-	background: #f7f7f7
-	padding: 14px
+	border-radius: $li-border-radius
+	background: $li-bg-color
+	padding: $li-padding
